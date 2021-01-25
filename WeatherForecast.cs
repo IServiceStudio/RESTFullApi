@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace RESTFullApi
 {
     public class WeatherForecast
     {
+        [Required]
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
